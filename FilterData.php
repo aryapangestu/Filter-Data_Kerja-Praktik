@@ -1,5 +1,6 @@
 <?php
 
+// Script Filter GetMeetingTypes
 public function GetMeetingTypes(Request $request, $filter)
   {
     try {
@@ -71,7 +72,7 @@ public function GetMeetingTypes(Request $request, $filter)
     }
   }
 
-  // get master_meeting_locations
+  // Script Filter GetMeetingLocations
   public function GetMeetingLocations(Request $request, $filter)
   {
     try {
@@ -161,7 +162,7 @@ public function GetMeetingTypes(Request $request, $filter)
     }
   }
 
-  // get master_groups
+  // Script Filter GetMasterGroups
   public function GetMasterGroups(Request $request, $filter)
   {
     try {
@@ -216,6 +217,7 @@ public function GetMeetingTypes(Request $request, $filter)
     }
   }
 
+  // Script Filter GetDraftMeetingsFilter
   public function GetDraftMeetingsFilter(Request $request, $identityNumber)
   {
     try {
@@ -367,6 +369,7 @@ public function GetMeetingTypes(Request $request, $filter)
     }
   }
 
+  // Script Filter GetSubmittedMeetingsFilter
   public function GetSubmittedMeetingsFilter(Request $request, $identityNumber)
   {
     try {
@@ -516,7 +519,8 @@ public function GetMeetingTypes(Request $request, $filter)
       ], 500);
     }
   }
-
+  
+  // Script Filter GetDisseminatedMeetingsFilter
   public function GetDisseminatedMeetingsFilter(Request $request, $identityNumber)
   {
     try {
